@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F5FF"
+        android:paddingBottom="@dimen/cbn_height"
+        tools:context=".ui.NotificationsFragment">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/customToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F5FF"
+            android:titleTextColor="@color/color_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/texttoolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/adlam_display"
+                android:text="راست"
+                android:textColor="@color/color_black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="545dp"
+            android:layout_marginBottom="64dp"
+            android:orientation="vertical"
+            android:paddingStart="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customToolbar"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
