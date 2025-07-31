@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#03DAC5</color>
@@ -7,10 +7,20 @@
     <color name="color_white">#FFFFFF</color>
     <color name="color_gray">#D3D3D3</color>
     <color name="color_black">#000000</color>
+    <color name="color_">#0D5FFF</color>
+    <color name="color_green">#8BC34A</color>
 
     <color name="color_home_bg">#9A979C</color>
     <color name="color_favorite_bg">#444145</color>
     <color name="color_chat_bg">#21FF06</color>
     <color name="color_notification_bg">#80007F</color>
     <color name="color_profile_bg">#0D5FFF</color>
+    <color name="coler_backround_statusbar">#F0F5FF</color>
+
+
+    <color name="primary_color">#000000</color>
+    <color name="light_background">#F4F7FE</color>
+    <color name="dark_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+
 </resources>

@@ -1,87 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginStart="4dp"
-    android:layout_width="160dp"
-    android:layout_height="wrap_content">
-
-
-    <ImageView
-        android:id="@+id/Image_item_favorit2"
-        android:layout_width="150dp"
-        android:layout_height="210dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="10dp"
-        android:src="@drawable/background_cardview1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="ContentDescription,MissingConstraints" />
-
-    <TextView
-        android:id="@+id/text1_item_favorit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="80dp"
-        android:text="وظایف کامل شده\n من نمی دانم"
-        android:textColor="@color/color_white"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/Image_item_favorit2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/Image_item_favorit2"
-        app:layout_constraintTop_toTopOf="@id/Image_item_favorit2"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/text2_item_favorit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text="6استکر"
-        android:textColor="#4D6460"
-        app:layout_constraintEnd_toEndOf="@id/Image_item_favorit2"
-        app:layout_constraintHorizontal_bias="0.946"
-        app:layout_constraintStart_toStartOf="@id/Image_item_favorit2"
-        app:layout_constraintTop_toBottomOf="@id/text1_item_favorit2"
-        tools:ignore="MissingConstraints" />
+    android:layout_marginStart="7dp"
+    android:layoutDirection="ltr"
+    android:layout_marginBottom="10dp"
+    android:layout_width="140dp"
+    android:layout_marginTop="0dp"
+    android:layout_height="200dp">
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="45dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
-        android:background="#D6E5FB"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text2_item_favorit2"
-        tools:ignore="MissingConstraints">
+        android:id="@+id/card_item_home"
+        android:layout_width="130dp"
+        android:layout_height="180dp"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="0dp"
+        app:cardCornerRadius="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="4dp">
 
-        <TextView
-            android:id="@+id/Text_in_favorit2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:layout_gravity="center"
-            android:padding="5dp"
-            android:text="رایگان"
-            android:textColor="#5C42DC"
-            android:textSize="13sp"
-            android:textStyle="bold" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/Relative_item_favorite2"
+            android:background="@drawable/background_cardview4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- متن داخل کارت -->
+            <TextView
+                android:id="@+id/text1_item_favorit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="وظایف کامل شده\nرا نمی‌دانم"
+                android:textSize="12sp"
+                android:fontFamily="@font/font3"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="80dp"
+                />
+
+            <!-- متن کوچک زیرین -->
+            <TextView
+                android:id="@+id/text2_item_favorit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="۶ امتیاز"
+                android:fontFamily="@font/font3"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#B0C4DE"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="80dp"/>
+
+
+            <Button
+                android:id="@+id/button1_favorite2"
+                android:textSize="14sp"
+                android:textColor="@color/color_profile_bg"
+                android:textStyle="bold"
+                android:fontFamily="@font/font3"
+                android:text="رایگان"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="145dp"
+                android:background="@drawable/background_button_favorit2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+
+
+
+
+        </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
 
 
+    <ImageView
+        android:id="@+id/imagePack"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_emoji"
+        android:scaleType="centerInside"
+        android:layout_marginStart="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:translationY="-0dp"
+        tools:ignore="ObsoleteLayoutParam" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+
+
+

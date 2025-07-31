@@ -1,10 +1,13 @@
 [versions]
 complieSdk = "34"
+gson = "2.13.1"
 targetSdk = "34"
 minSdk = "21"
 androidGradlePlugin = "8.8.0"
 kotlinPlugin = "1.9.23"
-kapt = "2.0.0"
+kapt = "1.9.23"
+ksp = "1.9.23-1.0.20"
+room = "2.6.1"
 androidx-core-ktx = "1.13.1"
 appcompat = "1.7.0"
 androidx-multidex = "2.0.1"
@@ -15,6 +18,8 @@ androidx-navigation = "2.8.0"
 junit = "4.13.2"
 androidx-junit = "1.2.1"
 androidx-espresso-core = "3.6.1"
+activity = "1.10.1"
+activityVersion = "1.10.1"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
@@ -25,11 +30,18 @@ android-material = { module = "com.google.android.material:material", version.re
 androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidx-constraintlayout" }
 androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "androidx-navigation" }
 androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "androidx-navigation" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { module = "junit:junit", version.ref = "junit" }
 androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-junit" }
 androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-espresso-core" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activityVersion" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version = "2.6.1" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version = "2.6.1" }
 
 [plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinPlugin" }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="0dp"
+    android:layout_width="170dp"
+    android:layout_height="250dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3_item_notif1"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        app:cardCornerRadius="24dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="0dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/Relative_item_notif1"
+            android:background="@drawable/background_cardview4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- متن داخل کارت -->
+            <TextView
+                android:id="@+id/text1_item_notif1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="وظایف کامل شده\nرا نمی‌دانم"
+                android:textSize="10sp"
+                android:fontFamily="@font/font3"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="100dp"
+                />
+
+            <!-- متن کوچک زیرین -->
+            <TextView
+                android:id="@+id/text2_item_notif1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="۶ امتیاز"
+                android:fontFamily="@font/font3"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#B0C4DE"
+                android:layout_marginTop="131dp"
+                android:layout_marginStart="110dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/FragDeleteNotif1"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/delete"
+            android:padding="8dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_item_notif1"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_favorit3_background"
+        android:text=" 25000ت"
+        android:fontFamily="@font/font3"
+        android:textColor="@color/color_white"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

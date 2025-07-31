@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <!-- کارت‌های پشت‌زمینه -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1_item_notif3"
+        android:layout_width="107dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:translationX="-40dp"
+        android:translationY="-20dp">
+
+        <RelativeLayout
+            android:background="@drawable/background_cardview5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2_item_notif3"
+        android:layout_width="107dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:translationY="-9dp"
+        android:translationX="-25dp">
+
+
+        <RelativeLayout
+            android:background="@drawable/background_cardview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- کارت اصلی -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3_item_notif3"
+        android:layout_width="107dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:translationY="4dp"
+        android:translationX="-10dp"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:background="@drawable/background_cardview4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- برچسب ویژه -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ویژه"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font3"
+                android:padding="6dp"
+                android:background="@drawable/label_background"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"/>
+
+            <!-- متن داخل کارت -->
+            <TextView
+                android:id="@+id/text1_item_notif3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="وظایف کامل شده\nرا نمی‌دانم"
+                android:textSize="10sp"
+                android:fontFamily="@font/font3"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="80dp"
+                />
+
+            <!-- متن کوچک زیرین -->
+            <TextView
+                android:id="@+id/text2_item_notif3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="۶ امتیاز"
+                android:textSize="10sp"
+                android:fontFamily="@font/font3"
+                android:textStyle="bold"
+                android:textColor="#B0C4DE"
+                android:layout_marginTop="111dp"
+                android:layout_marginStart="66dp"/>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <FrameLayout
+        android:id="@+id/FragDeletenotif3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:layout_marginStart="-1dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/delete"
+            android:padding="8dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button1_item_notif3"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/background_btn"
+        android:text="25000تومان"
+        android:textColor="#FF3B30"
+        android:fontFamily="@font/font3"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2_item_notif3"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/button_favorit3_background"
+        android:text=" 25000تومان"
+        android:fontFamily="@font/font3"
+        android:textColor="@color/color_white"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+</FrameLayout>

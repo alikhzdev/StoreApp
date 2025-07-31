@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Smileys",
+    "emojis": [
+      { "id": 1, "unicode": "😀" },
+      { "id": 2, "unicode": "😆"},
+      { "id": 3, "unicode": "😎"},
+      { "id": 4, "unicode": "🥳"},
+      { "id": 5, "unicode": "😡"},
+      { "id": 6, "unicode": "😭"},
+      { "id": 7, "unicode": "🥰"},
+      { "id": 8, "unicode": "😴"},
+      { "id": 9, "unicode": "🤔"},
+      { "id": 10, "unicode": "🤩"}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Animals",
+    "emojis": [
+      { "id": 11, "unicode": "🐶"},
+      { "id": 12, "unicode": "🐱"},
+      { "id": 13, "unicode": "🦁"},
+      { "id": 14, "unicode": "🐼"},
+      { "id": 15, "unicode": "🐨" },
+      { "id": 16, "unicode": "🐰" },
+      { "id": 17, "unicode": "🐸"},
+      { "id": 18, "unicode": "🐷"},
+      { "id": 19, "unicode": "🐵" },
+      { "id": 20, "unicode": "🦊" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Food",
+    "emojis": [
+      { "id": 21, "unicode": "🍕"},
+      { "id": 22, "unicode": "🍔"},
+      { "id": 23, "unicode": "🍣" },
+      { "id": 24, "unicode": "🍩"},
+      { "id": 25, "unicode": "🍟" },
+      { "id": 26, "unicode": "🌮"},
+      { "id": 27, "unicode": "🥗"},
+      { "id": 28, "unicode": "🍦" },
+      { "id": 29, "unicode": "🍉" },
+      { "id": 30, "unicode": "🍇" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Nature",
+    "emojis": [
+      { "id": 31, "unicode": "🌲"},
+      { "id": 32, "unicode": "🌻" },
+      { "id": 33, "unicode": "🌙"},
+      { "id": 34, "unicode": "☀️"},
+      { "id": 35, "unicode": "🌊"},
+      { "id": 36, "unicode": "🌈"},
+      { "id": 37, "unicode": "⛰️"},
+      { "id": 38, "unicode": "🔥"},
+      { "id": 39, "unicode": "❄️"},
+      { "id": 40, "unicode": "🌧️"}
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Travel",
+    "emojis": [
+      { "id": 41, "unicode": "✈️"},
+      { "id": 42, "unicode": "🚗"},
+      { "id": 43, "unicode": "🚲" },
+      { "id": 44, "unicode": "🚀"},
+      { "id": 45, "unicode": "🚢"},
+      { "id": 46, "unicode": "🚌"},
+      { "id": 47, "unicode": "🚉"},
+      { "id": 48, "unicode": "🏕️" },
+      { "id": 49, "unicode": "🏖️"},
+      { "id": 50, "unicode": "🏔️"}
+    ]
+  }
+]

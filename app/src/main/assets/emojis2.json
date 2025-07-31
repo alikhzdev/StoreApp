@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "شکلک ها",
+    "packs": [
+      {
+        "id": 1,
+        "name": "بسته مبارک",
+        "count" :  " 10 عدد",
+        "price": 50000,
+        "discountPrice": 30000,
+        "imageUrl": "happy_pack.png",
+        "categoryIds": [1, 2],
+        "isSpecial": "discounted",
+        "emojis": [
+          { "id": 1, "unicode": "😀" },
+          { "id": 2, "unicode": "😆"},
+          { "id": 3, "unicode": "😎"},
+          { "id": 4, "unicode": "🥳"},
+          { "id": 5, "unicode": "😡"},
+          { "id": 6, "unicode": "😭"},
+          { "id": 7, "unicode": "🥰"},
+          { "id": 8, "unicode": "😴"},
+          { "id": 9, "unicode": "🤔"},
+          { "id": 10, "unicode": "🤩"}
+        ]
+      },
+      {
+        "id": 2,
+        "name": "بسته ویژه لبخند",
+        "price": 0.0,
+        "count" :  "7 عدد",
+        "discountPrice": null,
+        "imageUrl": "happy_pack.png",
+        "categoryIds": [1, 2],
+        "isSpecial": "No",
+        "emojis": [
+          { "id": 4, "unicode": "😎" },
+          { "id": 5, "unicode": "🥳" },
+          { "id": 6, "unicode": "😜" },
+          { "id": 7, "unicode": "🥰" },
+          { "id": 8, "unicode": "😴" },
+          { "id": 9, "unicode": "🤔" },
+          { "id": 10, "unicode": "🤩" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "حیوان",
+    "packs": [
+      {
+        "id": 3,
+        "name": "پک حیوان",
+        "price": 10000,
+        "count" :  " 13 عدد",
+        "discountPrice": null,
+        "imageUrl": "happy_pack.png",
+        "categoryIds": [2],
+        "isSpecial": "No discount",
+        "emojis": [
+          { "id": 7, "unicode": "🐶" },
+          { "id": 8, "unicode": "🐱" },
+          { "id": 9, "unicode": "🐭" },
+          { "id": 11, "unicode": "🐶"},
+          { "id": 12, "unicode": "🐱"},
+          { "id": 13, "unicode": "🦁"},
+          { "id": 14, "unicode": "🐼"},
+          { "id": 15, "unicode": "🐨" },
+          { "id": 16, "unicode": "🐰" },
+          { "id": 17, "unicode": "🐸"},
+          { "id": 18, "unicode": "🐷"},
+          { "id": 19, "unicode": "🐵" },
+          { "id": 20, "unicode": "🦊" }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "پگ عن",
+        "price": 0.0,
+        "discountPrice": null,
+        "count" : " 7 عدد",
+        "imageUrl": "happy_pack.png",
+        "categoryIds": [1],
+        "isSpecial": "No",
+        "emojis": [
+          { "id": 4, "unicode": "😎" },
+          { "id": 5, "unicode": "🥳" },
+          { "id": 6, "unicode": "🐰" },
+          { "id": 7, "unicode": "🥰" },
+          { "id": 8, "unicode": "🐸" },
+          { "id": 9, "unicode": "🤔" },
+          { "id": 10, "unicode": "🐵" }
+        ]
+      }
+    ]
+  }
+]

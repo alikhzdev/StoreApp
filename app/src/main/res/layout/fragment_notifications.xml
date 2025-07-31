@@ -2,54 +2,173 @@
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#F0F5FF"
-        android:paddingBottom="@dimen/cbn_height"
-        tools:context=".ui.NotificationsFragment">
 
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/customToolbar"
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#F0F5FF"
-            android:titleTextColor="@color/color_black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            tools:ignore="MissingConstraints">
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="#F0F5FF">
 
-            <TextView
-                android:id="@+id/texttoolbar"
-                android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/adlam_display"
-                android:text="راست"
-                android:textColor="@color/color_black"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
-
-        </androidx.appcompat.widget.Toolbar>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewHome"
-            android:layout_width="match_parent"
-            android:layout_height="545dp"
-            android:layout_marginBottom="64dp"
-            android:orientation="vertical"
-            android:paddingStart="25sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/customToolbar"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints" />
+                android:background="#F0F5FF"
+                android:paddingBottom="90dp"
+                tools:context=".ui.NotificationsFragment">
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/customToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0F5FF"
+                    android:titleTextColor="@color/color_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/texttoolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/font3"
+                        android:text="سبد خرید"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nestedScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewNotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="470dp"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:nestedScrollingEnabled="false"
+                    app:layout_constraintBottom_toBottomOf="@id/line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/customToolbar"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:background="#211F1F"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recyclerViewNotif"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line"
+                    tools:ignore="MissingConstraints">
+
+
+                    <TextView
+                        android:id="@+id/textpol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/color_green"
+                        android:text="25000 تومان"
+                        android:fontFamily="@font/font3"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="150dp"
+                        android:fontFamily="@font/font3"
+                        android:text="جمع کل:"
+                        android:textColor="@color/color_green"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/linear1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints">
+
+
+                    <TextView
+                        android:id="@+id/texttakhfif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="30dp"
+                        android:text="2000 تومان"
+                        android:fontFamily="@font/font3"
+                        android:textColor="@color/color_green"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:text="سود شما: "
+                        android:fontFamily="@font/font3"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_green"
+                        android:layout_marginStart="165dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"/>
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/buttonPardakht"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear2"
+                    android:background="@drawable/button_card_background"
+                    android:text="تایید و پرداخت "
+                    android:fontFamily="@font/font3"
+                    android:elevation="0dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_white"
+                    tools:ignore="MissingConstraints" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
 </layout>

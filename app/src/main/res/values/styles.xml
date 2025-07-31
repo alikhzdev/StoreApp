@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CustomAutocompleteDropdown" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:dropDownWidth">match_parent</item>
+        <item name="android:dropDownHeight">wrap_content</item>
+    </style>
+
+
 </resources>

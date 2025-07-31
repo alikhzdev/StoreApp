@@ -20,6 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name='SSCustomBottomNavigation'
+rootProject.name='StoreApp'
 include ':app'
 include ':custombottomnavigation'

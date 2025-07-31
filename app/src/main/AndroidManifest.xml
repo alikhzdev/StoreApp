@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sscustombottomnavigation">
+    package="com.StoreApp">
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_foreground"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--  Kotlin Example  -->
         <activity
-            android:name="com.sscustombottomnavigation.KotlinActivity"
-            android:screenOrientation="fullSensor"
-            android:exported="true"
-            tools:ignore="DiscouragedApi">
+            android:name="com.StoreApp.ui.LoginActivity"
+            android:theme="@style/AppTheme2"
+            android:exported="true" />
+        <activity
+            android:name="com.StoreApp.ui.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.StoreApp.splashscreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.StoreApp.ui.ShowEmojiActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.StoreApp.ui.EmojiActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" /> <!-- Kotlin Example -->
+        <activity
+            android:name="com.StoreApp.KotlinActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-        <!--  Uncomment it to review Java implementation  -->
-<!--        <activity-->
-<!--            android:name="com.sscustombottomnavigation.JavaActivity"-->
-<!--            android:screenOrientation="fullSensor"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
     </application>
 
 </manifest>

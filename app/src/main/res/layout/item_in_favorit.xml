@@ -1,55 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="250dp"
-    android:layout_height="320dp"
+    android:layout_width="160dp"
+    android:layout_height="210dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:layoutDirection="ltr"
     android:padding="8dp">
 
     <!-- کارت‌های پشت‌زمینه -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card1_item_favorit"
-        android:layout_width="180dp"
-        android:layout_height="250dp"
+        android:layout_width="107dp"
+        android:layout_height="170dp"
         app:cardCornerRadius="24dp"
         app:cardElevation="4dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="40dp"
-        android:translationX="-30dp"
-        android:translationY="-20dp"
-        android:backgroundTint="#FF5722">
+        android:translationX="-40dp"
+        android:translationY="-20dp">
+
+        <RelativeLayout
+            android:background="@drawable/background_cardview5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card2_item_favorit"
-        android:layout_width="180dp"
-        android:layout_height="250dp"
+        android:layout_width="107dp"
+        android:layout_height="170dp"
         app:cardCornerRadius="24dp"
         app:cardElevation="4dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="40dp"
-        android:translationY="8dp"
-        android:translationX="-10dp"
-        android:backgroundTint="#4CAF50">
+        android:translationY="-9dp"
+        android:translationX="-25dp">
+
+
+        <RelativeLayout
+            android:background="@drawable/background_cardview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </androidx.cardview.widget.CardView>
 
     <!-- کارت اصلی -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card3_item_favorit"
-        android:layout_width="180dp"
-        android:layout_height="250dp"
+        android:layout_width="107dp"
+        android:layout_height="170dp"
         app:cardCornerRadius="24dp"
         app:cardElevation="6dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="40dp"
-        android:backgroundTint="#3F51B5"
-        android:translationY="30dp"
-        android:translationX="10dp"
+        android:translationY="4dp"
+        android:translationX="-10dp"
         android:padding="16dp">
 
         <RelativeLayout
+            android:background="@drawable/background_cardview4"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -58,23 +69,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ویژه"
+                android:fontFamily="@font/font3"
                 android:textSize="14sp"
                 android:textColor="#FFFFFF"
                 android:padding="6dp"
                 android:background="@drawable/label_background"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="20dp"/>
 
             <!-- متن داخل کارت -->
             <TextView
                 android:id="@+id/text1_item_favorit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="وظایف کامل شده\nرا نمی‌دانم"
-                android:textSize="18sp"
+                android:fontFamily="@font/font3"
+                android:text="یسته مبارک"
+                android:textSize="10sp"
+                android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:layout_marginEnd="15dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="80dp"
                 />
 
             <!-- متن کوچک زیرین -->
@@ -83,18 +97,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="۶ امتیاز"
-                android:textSize="20sp"
+                android:fontFamily="@font/font3"
+                android:textSize="10sp"
                 android:textStyle="bold"
                 android:textColor="#B0C4DE"
-                android:layout_marginTop="170dp"
-                android:layout_marginStart="110dp"/>
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="66dp"/>
 
             <FrameLayout
                 android:id="@+id/Fraglayoutfavorite3"
-                android:layout_width="35dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="207dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="135dp"
                 android:layout_marginBottom="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -116,31 +131,56 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_plas_foritem" />
             </FrameLayout>
 
 
-            <Button
-                android:id="@+id/button_item_favorit3"
-                android:layout_width="80dp"
-                android:layout_height="25dp"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="207dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/button_favorit3_background"
-                android:text=" 25000ت"
-                android:textColor="@color/color_white"
-                android:textStyle="bold"
-
-                app:layout_constraintEnd_toStartOf="@id/Fraglayoutfavorite3"
-                />
 
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+
+
+
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="7dp"
+        android:elevation="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- دکمه تخفیف (روی دکمه قیمت) -->
+        <Button
+            android:id="@+id/button2_item_favorit"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button_favorit3_background2"
+            android:text="50%"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font3" /> <!-- موقعیت به گوشه پایین-چپ -->
+
+        <!-- دکمه قیمت -->
+        <Button
+            android:id="@+id/button_item_favorit"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button_favorit3_background"
+            android:text="100ت"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font3"
+            android:textSize="10sp"
+            android:layout_marginStart="41dp"
+            android:drawablePadding="4dp"
+            />
+
+
+
+    </FrameLayout>
+
+
 
 
 

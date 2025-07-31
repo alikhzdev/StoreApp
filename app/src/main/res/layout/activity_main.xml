@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -39,22 +40,19 @@
             app:ss_backgroundBottomColor="#ffffff"
             app:ss_backgroundBottomDrawable="@drawable/bottom_drawable"
             app:ss_circleColor="#00B9E0"
-            app:ss_countBackgroundColor="#00B9E0"
+            app:ss_countBackgroundColor="#FFEB3B"
             app:ss_countTextColor="#ffffff"
             app:ss_countTypeface="fonts/graphik_semibold.ttf"
             app:ss_defaultIconColor="@color/color_black"
             app:ss_iconTextColor="@color/color_black"
             app:ss_iconTextSize="12sp"
             app:ss_iconTextTypeface="fonts/graphik_semibold.ttf"
-            app:ss_rippleColor="#00B9E0"
-            app:ss_selectedIconColor="#00B9E0"
-            app:ss_selectedIconTextColor="#00B9E0"
+            app:ss_rippleColor="@color/color_green"
+            app:ss_selectedIconColor="#03A9F4"
+            app:ss_selectedIconTextColor="#03A9F4"
             app:ss_shadowColor="#1f212121"
             app:ss_waveHeight="7" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <data>
-
-    </data>
 </layout>
